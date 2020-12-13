@@ -1,0 +1,133 @@
+#svg{
+    display: flex;
+    justify-content: center;
+}
+
+
+#shipContent{
+    width: min(50rem , 100%);
+}
+
+.clicked #spaceman{
+    animation: spaceman 5s alternate infinite linear;
+}
+@keyframes spaceman{
+    0%{
+        transform: translate(-0.5rem , 0.1rem);
+    }
+    
+    20%{
+        transform: translate(-1rem , -3rem);
+    }
+    
+    30%{
+        transform: translate(-1rem , -2rem);
+    }
+    
+    40%{
+        transform: translate(0.5rem , 0.3rem);
+    }
+    
+    50%{
+        transform: translate( 2rem , -2.5rem);
+    }
+    
+    60%{
+        transform: translate(-1.5rem , -3rem);
+    }
+    
+    80%{
+        transform: translate(0.5rem , 0.3rem);
+    }
+    
+    100%{
+        transform: translate(0.4rem , 0.3rem);
+    }
+}
+
+
+.clicked #spaceship{
+    animation: spaceship 0.2s alternate infinite linear;
+}
+@keyframes spaceship{
+    0%{
+        transform: translate(0.4rem);
+    }
+    100%{
+        transform: translate(-0.4rem);
+    }
+}
+
+
+.clicked #redFire{
+    animation: redFire 1.4s alternate infinite linear;
+    transform-origin: center;
+}
+@keyframes redFire{
+    from{
+        transform: scaleY(1);
+    }
+
+    to{
+        transform: scaleY(1.5) translateY(-6.5rem);
+    }
+}
+
+
+.clicked #orangeFire{
+    animation: orangeFire 0.8s alternate infinite linear;
+    transform-origin: center;
+}
+@keyframes orangeFire{
+    from{
+        transform: scaleY(1.1);
+    }
+    to{
+        transform: scaleY(1.5) translateY(-3rem);
+    }
+}
+
+
+.clicked #yellowFire{
+    animation: yellowFire 0.3s alternate infinite linear;
+    transform-origin: center;
+}
+@keyframes yellowFire{
+    from{
+        transform: scaleY(1.0);
+    }
+    to{
+        transform: scaleY(1.2) translateY(-2.5rem);
+    }
+}
+
+
+.clicked .star{
+    animation: star 1.5s normal infinite linear;
+}
+@keyframes star{
+    from{
+        transform: translateY(-70rem);
+    }
+    to{
+        transform: translateY(200rem);
+
+    }
+}
+
+
+.clicked #bigStar{
+    animation: bigStar 6s normal infinite linear;
+    transform-origin: center;
+}
+@keyframes bigStar{
+    from{
+        transform: rotate(0)
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
